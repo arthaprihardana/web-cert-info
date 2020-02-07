@@ -1,0 +1,31 @@
+{
+  "env": {
+      "development": {
+          "plugins": [
+              "add-module-exports",
+              "transform-async-to-generator"
+          ]
+      },
+      "staging": {
+          "plugins": [
+              "add-module-exports",
+              "transform-async-to-generator"
+          ]
+      },
+      "production": {
+          "plugins": [
+              "add-module-exports",
+              "transform-async-to-generator",
+              "transform-remove-console"
+          ]
+      }
+  },
+  "presets": [
+      ["@babel/env", {
+          "targets": {
+              "node": "current"
+          }
+      }]
+  ],
+  "comments": false
+}

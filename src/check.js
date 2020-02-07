@@ -1,10 +1,10 @@
 /*
  * @Author: Artha Prihardana 
  * @Date: 2019-08-26 17:07:37 
- * @Last Modified by:   Artha Prihardana 
- * @Last Modified time: 2019-08-26 17:07:37 
+ * @Last Modified by: Artha Prihardana
+ * @Last Modified time: 2020-02-07 14:37:59
  */
-var https = require('https');
+import https from 'https';
 
 function isEmpty(object) {
   for (var prop in object) {
@@ -89,7 +89,11 @@ function get(url, timeout, port, protocol) {
   });
 }
 
-module.exports = {
+// module.exports = {
+//   get: get
+// };
+
+export default {
   get: get
 };
 

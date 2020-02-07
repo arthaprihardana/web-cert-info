@@ -1,11 +1,11 @@
 /*
  * @Author: Artha Prihardana 
  * @Date: 2019-08-26 17:07:40 
- * @Last Modified by:   Artha Prihardana 
- * @Last Modified time: 2019-08-26 17:07:40 
+ * @Last Modified by: Artha Prihardana
+ * @Last Modified time: 2020-02-07 14:37:16
  */
-var inquirer = require('inquirer')
-var check = require('./check.js')
+import inquirer from "inquirer";
+import check from './check';
 
 const questions = [
 	{
